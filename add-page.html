@@ -74,6 +74,8 @@
     </div>
 
     <script>
+        let pageCounter = 1; // Keep track of the page numbers
+
         document.getElementById("pageForm").addEventListener("submit", function(event) {
             event.preventDefault();
 
@@ -82,13 +84,10 @@
             var description = document.getElementById("description").value.trim();
             var buttonText = document.getElementById("button").value.trim();
 
-            // Create a new URL-safe title
-            var urlTitle = title.replace(/\s+/g, '-').toLowerCase();
+            // Generate a new page URL (1.html, 2.html, etc.)
+            var newPageURL = pageCounter + ".html";
 
-            // Create the new page link (simulated)
-            var newPageURL = "new-page.html?title=" + urlTitle;
-
-            // Create the content for the new page (simulated)
+            // Create the content for the new page
             var newPageContent = `
                 <!DOCTYPE html>
                 <html lang="en">
@@ -109,9 +108,11 @@
             document.getElementById("newPageContainer").style.display = "block";
             document.getElementById("newPageLink").href = newPageURL;
 
-            // Optional: Save the content to a file (in reality, you'd need a backend to handle this)
-            // For demonstration purposes, we'll log the content.
+            // Log the new page content to the console (in a real app, you would write this to a file or database)
             console.log("New page content: ", newPageContent);
+
+            // Increment the pageCounter for the next page
+            pageCounter++;
 
             // Reset the form
             document.getElementById("pageForm").reset();
