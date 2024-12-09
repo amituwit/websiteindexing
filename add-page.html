@@ -74,8 +74,9 @@
     </div>
 
     <script>
-        let pageCounter = 1; // Keep track of the page numbers
+        let pageCounter = 1; // Start with page 1
 
+        // The form submission handler
         document.getElementById("pageForm").addEventListener("submit", function(event) {
             event.preventDefault();
 
@@ -85,9 +86,9 @@
             var buttonText = document.getElementById("button").value.trim();
 
             // Generate a new page URL (1.html, 2.html, etc.)
-            var newPageURL = pageCounter + ".html";
+            var newPageURL = pageCounter + ".html";  // Use incrementing number for new page
 
-            // Create the content for the new page
+            // Generate the content (this is simulated)
             var newPageContent = `
                 <!DOCTYPE html>
                 <html lang="en">
@@ -108,10 +109,10 @@
             document.getElementById("newPageContainer").style.display = "block";
             document.getElementById("newPageLink").href = newPageURL;
 
-            // Log the new page content to the console (in a real app, you would write this to a file or database)
+            // Log the new page content (in reality, you'd save this content to a file or database)
             console.log("New page content: ", newPageContent);
 
-            // Increment the pageCounter for the next page
+            // Increment the pageCounter
             pageCounter++;
 
             // Reset the form
