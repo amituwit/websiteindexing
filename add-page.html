@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create New Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        .form-container {
+            width: 300px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-container input,
+        .form-container textarea,
+        .form-container button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+
+        .form-container button {
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+
+        .form-container button:hover {
+            background-color: #45a049;
+        }
+
+        .new-page-container {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .new-page-container a {
+            color: #4CAF50;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="form-container">
+        <h2>Create New Page</h2>
+        <form id="pageForm">
+            <label for="title">Title</label>
+            <input type="text" id="title" name="title" placeholder="Enter title" required>
+
+            <label for="description">Description</label>
+            <textarea id="description" name="description" rows="4" placeholder="Enter description" required></textarea>
+
+            <label for="button">Apply Now Button Text</label>
+            <input type="text" id="button" name="button" placeholder="Enter button text" required>
+
+            <button type="submit">Create Page</button>
+        </form>
+    </div>
+
+    <div class="new-page-container" id="newPageContainer" style="display: none;">
+        <p>New page created! Visit your page at: <a id="newPageLink" href="#" target="_blank">Your Page</a></p>
+    </div>
+
+    <script>
+        document.getElementById("pageForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            // Get the form data
+            var title = document.getElementById("title").value.trim();
+            var description = document.getElementById("description").value.trim();
+            var buttonText = document.getElementById("button").value.trim();
+
+            // Create a new URL-safe title
+            var urlTitle = title.replace(/\s+/g, '-').toLowerCase();
+
+            // Create the new page link (simulated)
+            var newPageURL = "new-page.html?title=" + urlTitle;
+
+            // Create the content for the new page (simulated)
+            var newPageContent = `
+                <!DOCTYPE html>
+                <html lang="en">
+                <head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>${title}</title>
+                </head>
+                <body>
+                    <h1>${title}</h1>
+                    <p>${description}</p>
+                    <button onclick="window.location.href='https://www.example.com/apply'">${buttonText}</button>
+                </body>
+                </html>
+            `;
+
+            // For simulation purposes, display the page URL and content
+            document.getElementById("newPageContainer").style.display = "block";
+            document.getElementById("newPageLink").href = newPageURL;
+
+            // Optional: Save the content to a file (in reality, you'd need a backend to handle this)
+            // For demonstration purposes, we'll log the content.
+            console.log("New page content: ", newPageContent);
+
+            // Reset the form
+            document.getElementById("pageForm").reset();
+        });
+    </script>
+
+</body>
+</html>
