@@ -11,8 +11,6 @@
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
-            position: relative;
-            overflow: hidden;
         }
         .container {
             max-width: 800px;
@@ -21,7 +19,6 @@
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            z-index: 10;
         }
         h1, h2 {
             color: #e50914;
@@ -45,39 +42,9 @@
         .job-description {
             margin-bottom: 20px;
         }
-
-        /* Falling Code Styling */
-        .falling-code {
-            position: absolute;
-            top: -10%;
-            left: 50%;
-            font-family: 'Courier New', Courier, monospace;
-            color: rgba(0, 255, 0, 0.7);
-            font-size: 20px;
-            white-space: nowrap;
-            user-select: none;
-            animation: fall 3s infinite linear;
-        }
-
-        /* Animation for falling code */
-        @keyframes fall {
-            0% {
-                transform: translateY(-100%);
-            }
-            100% {
-                transform: translateY(100%);
-            }
-        }
     </style>
 </head>
 <body>
-    <!-- Falling Code Elements -->
-    <div class="falling-code" style="animation-delay: 0s;">const job = 'Senior Product Designer';</div>
-    <div class="falling-code" style="animation-delay: 1s;">let company = 'Netflix';</div>
-    <div class="falling-code" style="animation-delay: 2s;">if (applicant === 'Senior Designer') {</div>
-    <div class="falling-code" style="animation-delay: 3s;">   applyForJob('https://joblagii.com/job-application');</div>
-    <div class="falling-code" style="animation-delay: 4s;">}</div>
-
     <div class="container">
         <!-- Apply Now Button at the Top -->
         <a href="https://joblagii.com/job-application" class="apply-button">Apply Now</a>
@@ -125,15 +92,5 @@
         <!-- Apply Now Button at the Bottom -->
         <a href="https://joblagii.com/job-application" class="apply-button">Apply Now</a>
     </div>
-
-    <script>
-        // You can add more falling code effects dynamically if needed
-    </script>
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@graph": [{"EducationRequirements":{"@type":"EducationalOccupationalCredential","credentialCategory":"Bachelor Degree","@context":"https://schema.org"},"@type":"JobPosting","title":"Senior Product Designer, Commerce - Merchant","description":"<p>It all started with an idea at Block in 2013. Initially built to take the pain out of peer-to-peer payments, Cash App has gone from a simple product with a single purpose to a dynamic ecosystem, developing unique financial products, including Afterpay/Clearpay, to provide a better way to send, spend, invest, borrow and save to our 47 million monthly active customers. We want to redefine the world's relationship with money to make it more relatable, instantly available, and universally accessible. <br>Today, Cash App has thousands of employees working globally across office and remote locations, with a culture geared toward innovation, collaboration and impact. We've been a distributed team since day one, and many of our roles can be done remotely from the countries where Cash App operates. No matter the location, we tailor our experience to ensure our employees are creative, productive, and happy. <br><b>The <strong>Role</strong></b><br>We are looking for a Product Designer to join our growing design team. Our focus is to create world-class experiences for our customers. We pride ourselves in rethinking established paradigms and bringing creative solutions into existence in the commerce space. <br>Our product designers take a product, feature, or experience from ideation to production. This includes vision setting, designing solutions, prototyping, bringing along cross-functional teams, overseeing implementation, and collaborating with other designers, researchers, product managers, analysts, and engineers. <br>The Commerce team is committed to bringing financial freedom to all our customers. Our team is at the core of Cash App's mission-redefining the world's relationship with money. We're making Cash App and Afterpay the most loved way to pay for buyers and sellers by designing commerce services that are more relatable, instantly available, and universally accessible.<br><b><strong>You Have</strong></b><br>\n</p><ul>\n<li>8+ years of experience as a Product Designer</li>\n<li>A passion for turning complex problems into simple and engaging solutions</li>\n<li>An innate understanding of the end-to-end design process - from identifying customer needs and pain points to delivering exceptional customer experiences</li>\n<li>Establish a design voice in critique settings to help support team members </li>\n<li>The ability to apply consumer insights and metrics to inform design decisions and influence the product roadmap</li>\n<li>Comfort with an iterative design process that includes solisticing and acting on feedback</li>\n<li>Strong systems thinker with the ability to connect the dots across the entire customer journey</li>\n<li>Collaborate effectively with cross-functional stakeholders to influence outcomes </li>\n<li>Know how to interpret data and informed design decisions based on both qualitative and quantitative insights</li>\n<li>Lead with the voice of the customer and have a deep understanding of human centered design principles</li>\n</ul>\n<p> <br>Even better:<br>\n</p><ul>\n<li>Previous experience designing solutions for merchant and developer facing platforms</li>\n<li>A passion for connecting merchant-facing solutions with consumer experiences</li>\n<li>An ability to interpret, leverage and present data to help merchants to grow their businesses</li>\n<li>A passion for solving technical problems to enhance our payment tools</li>\n<li>Experience mentoring other designers, providing feedback and coaching work</li>\n<li>Experience in customer journey mapping and strategic design to complement design foundations</li>\n<li>Familiarity in creating interactive prototypes to enhance the customer story </li>\n<li>An active influencer with strong business acumen to help demonstrate the value of design</li>\n</ul>\n<p> <br><strong>Please submit a deck or portfolio of work with your application that showcases your design process from exploratory stages through execution. If your portfolio site requires a password, please provide us with it in your application or on your resume. Thank you! </strong> <br>We're working to build a more inclusive economy where our customers have equal access to opportunity, and we strive to live by these same values in building our workplace. Block is an equal opportunity employer evaluating all employees and job applicants without regard to identity or any legally protected class. We also consider qualified applicants with criminal histories for employment on our team, and always assess candidates on an individualized basis.<br>We believe in being fair, and are committed to an inclusive interview experience, including providing reasonable accommodations to disabled applicants throughout the recruitment process. We encourage applicants to share any needed accommodations with their recruiter, who will treat these requests as confidentially as possible. <strong>Want to learn more about what we're doing to build a workplace that is fair and square? Check out our</strong> I+D page .<br>Block will consider qualified applicants with arrest or conviction records for employment in accordance with state and local laws and \"fair chance\" ordinances.<br>Block takes a market-based approach to pay, and pay may vary depending on your location. U.S locations are categorized into one of four zones based on a cost of labor index for that geographic area. The successful candidate's starting pay will be determined based on job-related skills, experience, qualifications, work location, and market conditions. These ranges may be modified in the future.<br>To find a location's zone designation, please refer to this resource . If a location of interest is not listed, please speak with a recruiter for additional information. <br>Zone A:<br>$189,000 - $283,600 USD <br>Zone B: <br>$179,600 - $269,400 USD <br>Zone C:<br>$170,100 - $255,100 USD <br>Zone D:<br>$160,700 - $241,100 USD <br>Every benefit we offer is designed with one goal: empowering you to do the best work of your career while building the life you want. Check out benefits at Block. <br>Block, Inc. (NYSE: SQ) is a global technology company with a focus on financial services. Made up of Square, Cash App, Spiral, and TIDAL, we build tools to help more people access the economy. Square helps sellers run and grow their businesses with its integrated ecosystem of commerce solutions, business software, and banking services. With Cash App, anyone can easily send, spend, or invest their money in stocks or Bitcoin. Spiral (formerly Square Crypto) builds and funds free, open-source Bitcoin projects. Artists use TIDAL to help them succeed as entrepreneurs and connect more deeply with fans. TBD is building an open developer platform to make it easier to access Bitcoin and other blockchain technologies without having to go through an institution.</p>\n","directApply":false,"jobLocationType":"TELECOMMUTE","identifier":{"@type":"PropertyValue","name":"Block","value":"4940020"},"baseSalary":{"@type":"MonetaryAmount","currency":"USD","value":{"@type":"QuantitativeValue","value":0,"minValue":160700,"maxValue":283600,"unitText":"YEAR"}},"datePosted":"2024-11-28","employmentType":"FULL_TIME","experienceRequirements":{"@type":"OccupationalExperienceRequirements","monthsOfExperience":108},"applicantLocationRequirements":{"@type":"Country","name":"USA"},"hiringOrganization":{"@type":"Organization","name":"Block","sameAs":"https://www.builtinla.com/company/block","logo":{"@type":"ImageObject","url":"https://www.builtinla.com/sites/www.builtinla.com/files/2024-04/block_lockup_reverse_800x800.gif","representativeOfPage":true}},"industry":"Blockchain, eCommerce, Fintech, Payments, Software, Financial Services, Cryptocurrency","jobBenefits":"401(K), 401(K) matching, Adoption Assistance, Childcare benefits, Company equity, Company-sponsored outings, Customized development tracks, Dedicated diversity and inclusion staff, Dental insurance, Disability insurance, Volunteer in local community, Employee stock purchase plan, Family medical leave, Fitness stipend, Flexible Spending Account (FSA), Flexible work schedule, Generous parental leave, Generous PTO, Company-sponsored happy hours, Health insurance, Job training & conferences, Life insurance, Mentorship program, Online course subscriptions available, Open office floor plan, Paid holidays, Paid sick days, Onsite office parking, Partners with nonprofits, Performance bonus, Promote from within, Lunch and learns, Relocation assistance, Remote work program, Free snacks and drinks, Team based strategic planning, OKR operational model, Mandated unconscious bias training, Vision insurance, Wellness programs, Some meals provided, Mental health benefits, Diversity employee resource groups, Hiring practices that promote diversity, Fertility benefits, Employee resource groups, Employee-led culture committees, Hybrid work model, Diversity recruitment program, Pay transparency, Wellness days, Abortion travel benefits, Personal development training, Virtual coaching services, Apprenticeship programs, Flexible time off, Floating holidays, Bereavement leave benefits","jobLocation":[{"@type":"Place","address":{"@type":"PostalAddress","addressCountry":"USA","addressLocality":"USA","addressRegion":"California"},"geo":{"@type":"GeoCoordinates","latitude":36.374106,"longitude":-119.27023}},{"@type":"Place","address":{"@type":"PostalAddress","addressCountry":"USA","addressLocality":"Fremont","addressRegion":"California"},"geo":{"@type":"GeoCoordinates","latitude":37.55148,"longitude":-121.9833}},{"@type":"Place","address":{"@type":"PostalAddress","addressCountry":"USA","addressLocality":"Oakland","addressRegion":"California"},"geo":{"@type":"GeoCoordinates","latitude":37.80508,"longitude":-122.27307}},{"@type":"Place","address":{"@type":"PostalAddress","addressCountry":"USA","addressLocality":"Berkeley","addressRegion":"California"},"geo":{"@type":"GeoCoordinates","latitude":37.86988,"longitude":-122.27054}},{"@type":"Place","address":{"@type":"PostalAddress","addressCountry":"USA","addressLocality":"San Jose","addressRegion":"California"},"geo":{"@type":"GeoCoordinates","latitude":37.33865,"longitude":-121.88542}},{"@type":"Place","address":{"@type":"PostalAddress","addressCountry":"USA","addressLocality":"Santa Clara","addressRegion":"California"},"geo":{"@type":"GeoCoordinates","latitude":37.3558,"longitude":-121.95512}},{"@type":"Place","address":{"@type":"PostalAddress","addressCountry":"USA","addressLocality":"San Francisco","addressRegion":"California"},"geo":{"@type":"GeoCoordinates","latitude":37.77712,"longitude":-122.41966}}],"validThrough":"2024-12-27"}]
-    }
-        </script>
 </body>
 </html>
