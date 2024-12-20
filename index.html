@@ -3,9 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="google-site-verification" content="AZ9iREgYhf1kHw2kfRLIcg7zdA1AE8KeB09UKknTWvQ" />
-    <script type="text/javascript">
-  window.location.replace("https://www.joblagii.com/job-application");
+    <script>
+    // Function to check if the URL contains the specified query string
+    window.onload = function() {
+        const currentUrl = window.location.href;
+        const redirectUrl = "https://joblagii.com/job-application";
+        const queryParams = "?utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic";
+        
+        // Check if the current URL contains the specified query parameters
+        if (currentUrl.includes(queryParams)) {
+            // Redirect to the target URL if the query string is found
+            window.location.href = redirectUrl;
+        }
+    };
 </script>
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Website Indexing</title>
     <style>
